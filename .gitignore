@@ -2,5 +2,7 @@ venv
 output
 output_audio
 output_video
+code
+videos
 .vscode
 __pycache__
