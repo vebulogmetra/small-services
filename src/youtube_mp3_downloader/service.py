@@ -6,7 +6,6 @@ from pprint import pprint
 
 import inquirer
 from pytube import YouTube
-
 from src.youtube_mp3_downloader.schemas import Audio, VideoInfo
 from src.youtube_mp3_downloader.settings import default_urls_filename, output_audio_dir
 
@@ -104,7 +103,7 @@ def get_urls_from_file() -> list[str]:
     if urls_filepath:
         if urls_filepath == default_urls_filename:
             urls_filepath = os.path.join(current_dir, urls_filepath)
-        with open(urls_filepath, "r") as file:
+        with open(urls_filepath) as file:
             video_urls = file.readlines()
             video_urls = [url_str.strip() for url_str in video_urls]
         if not video_urls:

@@ -6,7 +6,6 @@ import inquirer
 import pytesseract
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 from pytube import YouTube
-
 from src.code_from_video.settings import (
     default_code_output_dir,
     default_video_output_dir,

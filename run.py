@@ -1,7 +1,6 @@
 import importlib.util
 
 import inquirer
-
 from src.core.settings import applications_mapping
 
 questions = [
